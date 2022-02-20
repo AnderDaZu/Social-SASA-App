@@ -1,0 +1,115 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #00243b;
+    --primario: #00ffff;
+    --secundario: #00b8e1;
+    --terciario: #004968;
+    --gris: #757575;
+}
+
+html {
+    font-size: 62.5%;
+    /* permite que el padding no afecte el tamaño del elemento */
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}   
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+}
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;    
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--terciario);
+    margin: 0 auto;
+}
+
+.titulo-secundario {
+    color: var(--terciario);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.nav {
+    /* margin-bottom: 2rem; */
+    padding: 1rem;
+    background-color: var(--secundario);   
+}
+.nav-link { 
+    font-weight: 700;
+    padding: 1rem;
+    color: var(--oscuro);
+    text-decoration: none;
+}
+.nav-link:hover {
+    background-color: var(--terciario);
+    color: var(--blanco);
+}
+
+.table {
+    border-spacing: .8rem;
+    padding: 2rem;
+}
+.table-head {
+    background-color: var(--secundario);
+    text-align: center;
+    color: #00243b;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: var(--terciario);
+    border-style: none;
+    border-radius: .5rem;
+    padding: .8rem 1rem;
+    color: var(--secundario);
+}
+.button:hover{
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.data {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.data label {
+    font-weight: 700;   
+}
+.data p {
+    margin: 0;
+    margin-left: .5rem;
+}
+.data h4{
+    margin: 0;
+}
+
+.card {
+    margin: 0 2rem;
+    background-color: #c4c3c3;
+    padding: .6rem;
+    border-radius: .3rem;
+}
+.card-comment {
+    margin: .3rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    background-color: #757575;
+}
+.card-comment p{
+    margin: .3rem;
+}
+.card-comment h4{
+    margin: 0;
+}
